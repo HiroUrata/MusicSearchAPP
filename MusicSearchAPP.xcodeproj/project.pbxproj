@@ -23,6 +23,12 @@
 		549EB72C273E215E00460F06 /* MusicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB72A273E215E00460F06 /* MusicDetailView.xib */; };
 		549EB731273E2BD000460F06 /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB72F273E2BD000460F06 /* PlayListTableViewCell.swift */; };
 		549EB732273E2BD000460F06 /* PlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB730273E2BD000460F06 /* PlayListTableViewCell.xib */; };
+		549EB735273E3C6400460F06 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB733273E3C6400460F06 /* VideoListView.swift */; };
+		549EB736273E3C6400460F06 /* VideoListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB734273E3C6400460F06 /* VideoListView.xib */; };
+		549EB739273E3E1C00460F06 /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB737273E3E1C00460F06 /* VideoListCell.swift */; };
+		549EB73A273E3E1C00460F06 /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB738273E3E1C00460F06 /* VideoListCell.xib */; };
+		549EB73E273E41CD00460F06 /* VideoDetailGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB73D273E41CD00460F06 /* VideoDetailGroup.swift */; };
+		549EB740273E41EE00460F06 /* VideoAlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB73F273E41EE00460F06 /* VideoAlamofireProcess.swift */; };
 		F03A05CB0B02775201486DE1 /* Pods_MusicSearchAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +53,12 @@
 		549EB72A273E215E00460F06 /* MusicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicDetailView.xib; sourceTree = "<group>"; };
 		549EB72F273E2BD000460F06 /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
 		549EB730273E2BD000460F06 /* PlayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableViewCell.xib; sourceTree = "<group>"; };
+		549EB733273E3C6400460F06 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+		549EB734273E3C6400460F06 /* VideoListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListView.xib; sourceTree = "<group>"; };
+		549EB737273E3E1C00460F06 /* VideoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCell.swift; sourceTree = "<group>"; };
+		549EB738273E3E1C00460F06 /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
+		549EB73D273E41CD00460F06 /* VideoDetailGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailGroup.swift; sourceTree = "<group>"; };
+		549EB73F273E41EE00460F06 /* VideoAlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAlamofireProcess.swift; sourceTree = "<group>"; };
 		5D2D8BD80780F7D2FAF7388D /* Pods-MusicSearchAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchAPP.release.xcconfig"; path = "Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +139,10 @@
 				549EB72E273E2B2200460F06 /* MusicDetailViewGroup */,
 				549EB71F273E070B00460F06 /* CollectionViewCustomCellGroup */,
 				549EB724273E16CC00460F06 /* Lottie */,
+				549EB733273E3C6400460F06 /* VideoListView.swift */,
+				549EB734273E3C6400460F06 /* VideoListView.xib */,
+				549EB737273E3E1C00460F06 /* VideoListCell.swift */,
+				549EB738273E3E1C00460F06 /* VideoListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,8 +150,8 @@
 		549EB71A273E045C00460F06 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				549EB720273E0A6000460F06 /* MusicDetailDatas.swift */,
-				549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */,
+				549EB73C273E41A900460F06 /* VideoDetailGroup */,
+				549EB73B273E418E00460F06 /* MusicDetailDataGroup */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +183,24 @@
 				549EB730273E2BD000460F06 /* PlayListTableViewCell.xib */,
 			);
 			path = MusicDetailViewGroup;
+			sourceTree = "<group>";
+		};
+		549EB73B273E418E00460F06 /* MusicDetailDataGroup */ = {
+			isa = PBXGroup;
+			children = (
+				549EB720273E0A6000460F06 /* MusicDetailDatas.swift */,
+				549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */,
+			);
+			path = MusicDetailDataGroup;
+			sourceTree = "<group>";
+		};
+		549EB73C273E41A900460F06 /* VideoDetailGroup */ = {
+			isa = PBXGroup;
+			children = (
+				549EB73D273E41CD00460F06 /* VideoDetailGroup.swift */,
+				549EB73F273E41EE00460F06 /* VideoAlamofireProcess.swift */,
+			);
+			path = VideoDetailGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549EB736273E3C6400460F06 /* VideoListView.xib in Resources */,
 				549EB728273E182700460F06 /* 5.json in Resources */,
 				549EB732273E2BD000460F06 /* PlayListTableViewCell.xib in Resources */,
+				549EB73A273E3E1C00460F06 /* VideoListCell.xib in Resources */,
 				549EB711273E02C100460F06 /* LaunchScreen.storyboard in Resources */,
 				549EB70E273E02C100460F06 /* Assets.xcassets in Resources */,
 				549EB72C273E215E00460F06 /* MusicDetailView.xib in Resources */,
@@ -288,12 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549EB735273E3C6400460F06 /* VideoListView.swift in Sources */,
 				549EB709273E02BF00460F06 /* ViewController.swift in Sources */,
+				549EB740273E41EE00460F06 /* VideoAlamofireProcess.swift in Sources */,
+				549EB739273E3E1C00460F06 /* VideoListCell.swift in Sources */,
 				549EB705273E02BF00460F06 /* AppDelegate.swift in Sources */,
 				549EB731273E2BD000460F06 /* PlayListTableViewCell.swift in Sources */,
 				549EB707273E02BF00460F06 /* SceneDelegate.swift in Sources */,
 				549EB71D273E070300460F06 /* CollectionViewCustomCell.swift in Sources */,
 				549EB723273E0B0C00460F06 /* MusicAlamofireProcess.swift in Sources */,
+				549EB73E273E41CD00460F06 /* VideoDetailGroup.swift in Sources */,
 				549EB726273E16FB00460F06 /* LottieAnimation.swift in Sources */,
 				549EB721273E0A6000460F06 /* MusicDetailDatas.swift in Sources */,
 				549EB72B273E215E00460F06 /* MusicDetailView.swift in Sources */,

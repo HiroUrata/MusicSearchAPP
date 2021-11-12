@@ -28,7 +28,6 @@ class MusicDetailView: UIViewController {
         super.viewWillAppear(animated)
         
         mediumImageView.sd_setImage(with: URL(string: mediumImageURL), completed: nil)
-        
     }
 
 }
