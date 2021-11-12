@@ -11,4 +11,10 @@ struct MusicDetailData{
     let mediumImageUrl:String?
     let title:String?
     let artistName:String?
+    let playList:PlayListDetail?
+}
+
+struct PlayListDetail{
+    
+    let playListContents:String?
 }
