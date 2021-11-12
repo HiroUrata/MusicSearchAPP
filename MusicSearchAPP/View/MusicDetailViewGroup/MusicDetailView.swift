@@ -14,6 +14,7 @@ class MusicDetailView: UIViewController {
     @IBOutlet weak var playListTableVew: UITableView!
     
     public var playListCellContentsArray = [String]()
+    public var artistName = String()
     public var mediumImageURL = String()
     
     override func viewDidLoad() {
@@ -39,6 +40,13 @@ extension MusicDetailView:UITableViewDelegate{
         return tableView.frame.height / 8
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let videoListView = VideoListView()
+        videoListView.getArtistName = artistName + " " + playListCellContentsArray[indexPath.row]
+        videoListView.modalPresentationStyle = .automatic
+        present(videoListView, animated: true, completion: nil)
+    }
 }
 
 extension MusicDetailView:UITableViewDataSource{
@@ -53,8 +61,11 @@ extension MusicDetailView:UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayListCell", for: indexPath) as! PlayListTableViewCell
         
         cell.playListContentsLabel.text = "\(String(indexPath.row + 1))曲目. \(playListCellContentsArray[indexPath.row])"
-        
+            
         return cell
     }
-    
+ 
+ 
 }
+
+

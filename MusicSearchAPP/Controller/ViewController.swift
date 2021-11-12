@@ -54,9 +54,7 @@ class ViewController: UIViewController {
                 cellContentsArray = result!
                 searchResultCollectionView.reloadData()
             }
-            
         }
-        
     }
     
 }
@@ -66,6 +64,7 @@ extension ViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let musicDetailView = MusicDetailView()
+        musicDetailView.artistName = cellContentsArray[indexPath.row].artistName!
         musicDetailView.playListCellContentsArray = (cellContentsArray[indexPath.row].playList?.playListContents?.components(separatedBy: "###"))!
         musicDetailView.mediumImageURL = cellContentsArray[indexPath.row].mediumImageUrl!
         musicDetailView.modalPresentationStyle = .automatic

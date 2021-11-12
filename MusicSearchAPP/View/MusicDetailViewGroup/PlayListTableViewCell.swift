@@ -7,10 +7,10 @@
 
 import UIKit
 
-class PlayListTableViewCell: UITableViewCell {
+class PlayListTableViewCell: UITableViewCell{
 
     @IBOutlet weak var playListContentsLabel: UILabel!
-    @IBOutlet weak var musicPlayButton: UIButton!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,11 +34,6 @@ class PlayListTableViewCell: UITableViewCell {
         super.prepareForReuse()
         
         playListContentsLabel.text = ""
-    }
-    
-    @IBAction func playMusic(_ sender: UIButton) {
-        
-        
     }
     
     

@@ -29,6 +29,8 @@
 		549EB73A273E3E1C00460F06 /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB738273E3E1C00460F06 /* VideoListCell.xib */; };
 		549EB73E273E41CD00460F06 /* VideoDetailGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB73D273E41CD00460F06 /* VideoDetailGroup.swift */; };
 		549EB740273E41EE00460F06 /* VideoAlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB73F273E41EE00460F06 /* VideoAlamofireProcess.swift */; };
+		549EB744273E66AF00460F06 /* VideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB742273E66AF00460F06 /* VideoPlayView.swift */; };
+		549EB745273E66AF00460F06 /* VideoPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB743273E66AF00460F06 /* VideoPlayView.xib */; };
 		F03A05CB0B02775201486DE1 /* Pods_MusicSearchAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		549EB738273E3E1C00460F06 /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
 		549EB73D273E41CD00460F06 /* VideoDetailGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailGroup.swift; sourceTree = "<group>"; };
 		549EB73F273E41EE00460F06 /* VideoAlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAlamofireProcess.swift; sourceTree = "<group>"; };
+		549EB742273E66AF00460F06 /* VideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayView.swift; sourceTree = "<group>"; };
+		549EB743273E66AF00460F06 /* VideoPlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayView.xib; sourceTree = "<group>"; };
 		5D2D8BD80780F7D2FAF7388D /* Pods-MusicSearchAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchAPP.release.xcconfig"; path = "Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,15 @@
 				07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5419C546273E6A2100EF446A /* VideoPlayViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				549EB742273E66AF00460F06 /* VideoPlayView.swift */,
+				549EB743273E66AF00460F06 /* VideoPlayView.xib */,
+			);
+			path = VideoPlayViewGroup;
 			sourceTree = "<group>";
 		};
 		549EB6F8273E02BE00460F06 = {
@@ -136,13 +149,11 @@
 			children = (
 				549EB70A273E02BF00460F06 /* Main.storyboard */,
 				549EB70D273E02C100460F06 /* Assets.xcassets */,
+				5419C546273E6A2100EF446A /* VideoPlayViewGroup */,
+				549EB741273E65FB00460F06 /* VideoListViewGroup */,
 				549EB72E273E2B2200460F06 /* MusicDetailViewGroup */,
 				549EB71F273E070B00460F06 /* CollectionViewCustomCellGroup */,
 				549EB724273E16CC00460F06 /* Lottie */,
-				549EB733273E3C6400460F06 /* VideoListView.swift */,
-				549EB734273E3C6400460F06 /* VideoListView.xib */,
-				549EB737273E3E1C00460F06 /* VideoListCell.swift */,
-				549EB738273E3E1C00460F06 /* VideoListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +212,17 @@
 				549EB73F273E41EE00460F06 /* VideoAlamofireProcess.swift */,
 			);
 			path = VideoDetailGroup;
+			sourceTree = "<group>";
+		};
+		549EB741273E65FB00460F06 /* VideoListViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				549EB733273E3C6400460F06 /* VideoListView.swift */,
+				549EB734273E3C6400460F06 /* VideoListView.xib */,
+				549EB737273E3E1C00460F06 /* VideoListCell.swift */,
+				549EB738273E3E1C00460F06 /* VideoListCell.xib */,
+			);
+			path = VideoListViewGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +287,7 @@
 			files = (
 				549EB736273E3C6400460F06 /* VideoListView.xib in Resources */,
 				549EB728273E182700460F06 /* 5.json in Resources */,
+				549EB745273E66AF00460F06 /* VideoPlayView.xib in Resources */,
 				549EB732273E2BD000460F06 /* PlayListTableViewCell.xib in Resources */,
 				549EB73A273E3E1C00460F06 /* VideoListCell.xib in Resources */,
 				549EB711273E02C100460F06 /* LaunchScreen.storyboard in Resources */,
@@ -330,6 +353,7 @@
 				549EB739273E3E1C00460F06 /* VideoListCell.swift in Sources */,
 				549EB705273E02BF00460F06 /* AppDelegate.swift in Sources */,
 				549EB731273E2BD000460F06 /* PlayListTableViewCell.swift in Sources */,
+				549EB744273E66AF00460F06 /* VideoPlayView.swift in Sources */,
 				549EB707273E02BF00460F06 /* SceneDelegate.swift in Sources */,
 				549EB71D273E070300460F06 /* CollectionViewCustomCell.swift in Sources */,
 				549EB723273E0B0C00460F06 /* MusicAlamofireProcess.swift in Sources */,
