@@ -13,7 +13,8 @@ class MusicDetailView: UIViewController {
     @IBOutlet weak var mediumImageView: UIImageView!
     @IBOutlet weak var playListTableVew: UITableView!
     
-    private var playListCellContentsArray = [String]()
+    public var playListCellContentsArray = [String]()
+    public var mediumImageURL = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,12 @@ class MusicDetailView: UIViewController {
         playListTableVew.register(UINib(nibName: "PlayListTableViewCell", bundle: nil), forCellReuseIdentifier: "PlayListCell")
         playListTableVew.delegate = self
         playListTableVew.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        mediumImageView.sd_setImage(with: URL(string: mediumImageURL), completed: nil)
         
     }
 
@@ -28,16 +35,27 @@ class MusicDetailView: UIViewController {
 
 extension MusicDetailView:UITableViewDelegate{
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return tableView.frame.height / 8
+    }
     
 }
 
 extension MusicDetailView:UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        
+        return playListCellContentsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayListCell", for: indexPath) as! PlayListTableViewCell
+        
+        cell.playListContentsLabel.text = "\(String(indexPath.row + 1))曲目. \(playListCellContentsArray[indexPath.row])"
+        
+        return cell
     }
+    
 }

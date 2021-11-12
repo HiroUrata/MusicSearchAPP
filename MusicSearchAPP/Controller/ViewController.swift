@@ -63,9 +63,14 @@ class ViewController: UIViewController {
 
 extension ViewController:UICollectionViewDelegate{
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let musicDetailView = MusicDetailView()
+        musicDetailView.playListCellContentsArray = (cellContentsArray[indexPath.row].playList?.playListContents?.components(separatedBy: "###"))!
+        musicDetailView.mediumImageURL = cellContentsArray[indexPath.row].mediumImageUrl!
+        musicDetailView.modalPresentationStyle = .automatic
+        present(musicDetailView, animated: true, completion: nil)
+    }
 }
 
 extension ViewController:UICollectionViewDataSource{
