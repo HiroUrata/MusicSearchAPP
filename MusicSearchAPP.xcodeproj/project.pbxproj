@@ -17,6 +17,12 @@
 		549EB71E273E070300460F06 /* CollectionViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB71C273E070300460F06 /* CollectionViewCustomCell.xib */; };
 		549EB721273E0A6000460F06 /* MusicDetailDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB720273E0A6000460F06 /* MusicDetailDatas.swift */; };
 		549EB723273E0B0C00460F06 /* MusicAlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */; };
+		549EB726273E16FB00460F06 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB725273E16FB00460F06 /* LottieAnimation.swift */; };
+		549EB728273E182700460F06 /* 5.json in Resources */ = {isa = PBXBuildFile; fileRef = 549EB727273E182700460F06 /* 5.json */; };
+		549EB72B273E215E00460F06 /* MusicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB729273E215E00460F06 /* MusicDetailView.swift */; };
+		549EB72C273E215E00460F06 /* MusicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB72A273E215E00460F06 /* MusicDetailView.xib */; };
+		549EB731273E2BD000460F06 /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB72F273E2BD000460F06 /* PlayListTableViewCell.swift */; };
+		549EB732273E2BD000460F06 /* PlayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB730273E2BD000460F06 /* PlayListTableViewCell.xib */; };
 		F03A05CB0B02775201486DE1 /* Pods_MusicSearchAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +41,12 @@
 		549EB71C273E070300460F06 /* CollectionViewCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCustomCell.xib; sourceTree = "<group>"; };
 		549EB720273E0A6000460F06 /* MusicDetailDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailDatas.swift; sourceTree = "<group>"; };
 		549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAlamofireProcess.swift; sourceTree = "<group>"; };
+		549EB725273E16FB00460F06 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		549EB727273E182700460F06 /* 5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 5.json; sourceTree = "<group>"; };
+		549EB729273E215E00460F06 /* MusicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailView.swift; sourceTree = "<group>"; };
+		549EB72A273E215E00460F06 /* MusicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicDetailView.xib; sourceTree = "<group>"; };
+		549EB72F273E2BD000460F06 /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
+		549EB730273E2BD000460F06 /* PlayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableViewCell.xib; sourceTree = "<group>"; };
 		5D2D8BD80780F7D2FAF7388D /* Pods-MusicSearchAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchAPP.release.xcconfig"; path = "Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +124,9 @@
 			children = (
 				549EB70A273E02BF00460F06 /* Main.storyboard */,
 				549EB70D273E02C100460F06 /* Assets.xcassets */,
+				549EB72E273E2B2200460F06 /* MusicDetailViewGroup */,
 				549EB71F273E070B00460F06 /* CollectionViewCustomCellGroup */,
+				549EB724273E16CC00460F06 /* Lottie */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +147,26 @@
 				549EB71C273E070300460F06 /* CollectionViewCustomCell.xib */,
 			);
 			path = CollectionViewCustomCellGroup;
+			sourceTree = "<group>";
+		};
+		549EB724273E16CC00460F06 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				549EB725273E16FB00460F06 /* LottieAnimation.swift */,
+				549EB727273E182700460F06 /* 5.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		549EB72E273E2B2200460F06 /* MusicDetailViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				549EB729273E215E00460F06 /* MusicDetailView.swift */,
+				549EB72A273E215E00460F06 /* MusicDetailView.xib */,
+				549EB72F273E2BD000460F06 /* PlayListTableViewCell.swift */,
+				549EB730273E2BD000460F06 /* PlayListTableViewCell.xib */,
+			);
+			path = MusicDetailViewGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +229,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549EB728273E182700460F06 /* 5.json in Resources */,
+				549EB732273E2BD000460F06 /* PlayListTableViewCell.xib in Resources */,
 				549EB711273E02C100460F06 /* LaunchScreen.storyboard in Resources */,
 				549EB70E273E02C100460F06 /* Assets.xcassets in Resources */,
+				549EB72C273E215E00460F06 /* MusicDetailView.xib in Resources */,
 				549EB70C273E02BF00460F06 /* Main.storyboard in Resources */,
 				549EB71E273E070300460F06 /* CollectionViewCustomCell.xib in Resources */,
 			);
@@ -253,10 +290,13 @@
 			files = (
 				549EB709273E02BF00460F06 /* ViewController.swift in Sources */,
 				549EB705273E02BF00460F06 /* AppDelegate.swift in Sources */,
+				549EB731273E2BD000460F06 /* PlayListTableViewCell.swift in Sources */,
 				549EB707273E02BF00460F06 /* SceneDelegate.swift in Sources */,
 				549EB71D273E070300460F06 /* CollectionViewCustomCell.swift in Sources */,
 				549EB723273E0B0C00460F06 /* MusicAlamofireProcess.swift in Sources */,
+				549EB726273E16FB00460F06 /* LottieAnimation.swift in Sources */,
 				549EB721273E0A6000460F06 /* MusicDetailDatas.swift in Sources */,
+				549EB72B273E215E00460F06 /* MusicDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
