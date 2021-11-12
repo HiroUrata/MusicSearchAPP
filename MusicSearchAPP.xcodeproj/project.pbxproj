@@ -13,9 +13,16 @@
 		549EB70C273E02BF00460F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549EB70A273E02BF00460F06 /* Main.storyboard */; };
 		549EB70E273E02C100460F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549EB70D273E02C100460F06 /* Assets.xcassets */; };
 		549EB711273E02C100460F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549EB70F273E02C100460F06 /* LaunchScreen.storyboard */; };
+		549EB71D273E070300460F06 /* CollectionViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB71B273E070300460F06 /* CollectionViewCustomCell.swift */; };
+		549EB71E273E070300460F06 /* CollectionViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549EB71C273E070300460F06 /* CollectionViewCustomCell.xib */; };
+		549EB721273E0A6000460F06 /* MusicDetailDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB720273E0A6000460F06 /* MusicDetailDatas.swift */; };
+		549EB723273E0B0C00460F06 /* MusicAlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */; };
+		F03A05CB0B02775201486DE1 /* Pods_MusicSearchAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicSearchAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		549A7B0276AB564D00064B10 /* Pods-MusicSearchAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchAPP.debug.xcconfig"; path = "Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		549EB701273E02BF00460F06 /* MusicSearchAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicSearchAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		549EB704273E02BF00460F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		549EB706273E02BF00460F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		549EB70D273E02C100460F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		549EB710273E02C100460F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		549EB712273E02C100460F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		549EB71B273E070300460F06 /* CollectionViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCustomCell.swift; sourceTree = "<group>"; };
+		549EB71C273E070300460F06 /* CollectionViewCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCustomCell.xib; sourceTree = "<group>"; };
+		549EB720273E0A6000460F06 /* MusicDetailDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailDatas.swift; sourceTree = "<group>"; };
+		549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAlamofireProcess.swift; sourceTree = "<group>"; };
+		5D2D8BD80780F7D2FAF7388D /* Pods-MusicSearchAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchAPP.release.xcconfig"; path = "Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03A05CB0B02775201486DE1 /* Pods_MusicSearchAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B300EF00263690D074B8D8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				549A7B0276AB564D00064B10 /* Pods-MusicSearchAPP.debug.xcconfig */,
+				5D2D8BD80780F7D2FAF7388D /* Pods-MusicSearchAPP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		130BC5E390416340202DEF40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E3C64C43578A7BBA84C9E5 /* Pods_MusicSearchAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		549EB6F8273E02BE00460F06 = {
 			isa = PBXGroup;
 			children = (
 				549EB703273E02BF00460F06 /* MusicSearchAPP */,
 				549EB702273E02BF00460F06 /* Products */,
+				0B300EF00263690D074B8D8E /* Pods */,
+				130BC5E390416340202DEF40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +90,49 @@
 			children = (
 				549EB704273E02BF00460F06 /* AppDelegate.swift */,
 				549EB706273E02BF00460F06 /* SceneDelegate.swift */,
-				549EB708273E02BF00460F06 /* ViewController.swift */,
-				549EB70A273E02BF00460F06 /* Main.storyboard */,
-				549EB70D273E02C100460F06 /* Assets.xcassets */,
+				549EB71A273E045C00460F06 /* Model */,
+				549EB719273E045600460F06 /* View */,
+				549EB718273E044B00460F06 /* Controller */,
 				549EB70F273E02C100460F06 /* LaunchScreen.storyboard */,
 				549EB712273E02C100460F06 /* Info.plist */,
 			);
 			path = MusicSearchAPP;
+			sourceTree = "<group>";
+		};
+		549EB718273E044B00460F06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				549EB708273E02BF00460F06 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		549EB719273E045600460F06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				549EB70A273E02BF00460F06 /* Main.storyboard */,
+				549EB70D273E02C100460F06 /* Assets.xcassets */,
+				549EB71F273E070B00460F06 /* CollectionViewCustomCellGroup */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		549EB71A273E045C00460F06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				549EB720273E0A6000460F06 /* MusicDetailDatas.swift */,
+				549EB722273E0B0C00460F06 /* MusicAlamofireProcess.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		549EB71F273E070B00460F06 /* CollectionViewCustomCellGroup */ = {
+			isa = PBXGroup;
+			children = (
+				549EB71B273E070300460F06 /* CollectionViewCustomCell.swift */,
+				549EB71C273E070300460F06 /* CollectionViewCustomCell.xib */,
+			);
+			path = CollectionViewCustomCellGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 549EB715273E02C100460F06 /* Build configuration list for PBXNativeTarget "MusicSearchAPP" */;
 			buildPhases = (
+				D55CF6910CF174616ECEBB6C /* [CP] Check Pods Manifest.lock */,
 				549EB6FD273E02BF00460F06 /* Sources */,
 				549EB6FE273E02BF00460F06 /* Frameworks */,
 				549EB6FF273E02BF00460F06 /* Resources */,
+				E575E0E5584B4D49F6A8E902 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +198,53 @@
 				549EB711273E02C100460F06 /* LaunchScreen.storyboard in Resources */,
 				549EB70E273E02C100460F06 /* Assets.xcassets in Resources */,
 				549EB70C273E02BF00460F06 /* Main.storyboard in Resources */,
+				549EB71E273E070300460F06 /* CollectionViewCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D55CF6910CF174616ECEBB6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicSearchAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E575E0E5584B4D49F6A8E902 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicSearchAPP/Pods-MusicSearchAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		549EB6FD273E02BF00460F06 /* Sources */ = {
@@ -141,6 +254,9 @@
 				549EB709273E02BF00460F06 /* ViewController.swift in Sources */,
 				549EB705273E02BF00460F06 /* AppDelegate.swift in Sources */,
 				549EB707273E02BF00460F06 /* SceneDelegate.swift in Sources */,
+				549EB71D273E070300460F06 /* CollectionViewCustomCell.swift in Sources */,
+				549EB723273E0B0C00460F06 /* MusicAlamofireProcess.swift in Sources */,
+				549EB721273E0A6000460F06 /* MusicDetailDatas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +400,7 @@
 		};
 		549EB716273E02C100460F06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549A7B0276AB564D00064B10 /* Pods-MusicSearchAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +411,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,12 +423,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		549EB717273E02C100460F06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D2D8BD80780F7D2FAF7388D /* Pods-MusicSearchAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +440,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
