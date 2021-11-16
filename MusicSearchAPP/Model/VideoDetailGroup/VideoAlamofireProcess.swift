@@ -9,8 +9,6 @@ import Alamofire
 import SwiftyJSON
 
 
-
-
 class VideoAlamofireProcess{
     
     private var videoDetailResultArray = [VideoDetailDatas]()
@@ -20,9 +18,11 @@ extension VideoAlamofireProcess{
     
     public func getVideoDetailData(searchKeyword:String?,comletion: @escaping ([VideoDetailDatas]?,Error?) -> Void){
         
+        print(searchKeyword as Any)
+        
         guard let keyword = searchKeyword else { return }
         
-        let apiKey = ""
+        let apiKey = "https://www.googleapis.com/youtube/v3/search?&key=AIzaSyCGiCEWay6ZVYxAVC1lbwP-7WcZiM0ZQ6Q&part=snippet&q=\(keyword.urlEncoded)&maxResults=15"
         
         AF.request(apiKey, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON {[self] response in
             
@@ -61,3 +61,5 @@ extension VideoAlamofireProcess{
         
     }
 }
+
+

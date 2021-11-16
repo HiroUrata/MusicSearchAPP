@@ -23,16 +23,13 @@ class VideoPlayView: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("~~~~~~~~~~~カウントは\(videoView.subviews.count)~~~~~~~~~~~~")
         videoTitleLabel.text = playVideoTitle
         videoDescriptionView.text = playVideoDescription
         videoView.frame = videoOnView.frame
         videoView.load(withVideoId: playVideoID!, playerVars: ["playersinline":1])
         videoOnView.addSubview(videoView)
-        print("~~~~~~~~~~~カウントは\(videoView.subviews.count)~~~~~~~~~~~~")
         
         videoView.delegate = self
-         
     }
 
 }
