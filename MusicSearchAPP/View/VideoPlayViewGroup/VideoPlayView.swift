@@ -23,6 +23,11 @@ class VideoPlayView: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
         videoTitleLabel.text = playVideoTitle
         videoDescriptionView.text = playVideoDescription
         videoView.frame = videoOnView.frame

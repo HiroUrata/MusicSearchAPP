@@ -25,10 +25,9 @@ class VideoListView: UIViewController {
         videoListTableView.dataSource = self
         
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         videoAlamofireProcess.getVideoDetailData(searchKeyword: getArtistName) {[self] result, error in
             
@@ -50,9 +49,7 @@ class VideoListView: UIViewController {
         }
         
     }
-    
 }
-
 
 extension VideoListView:UITableViewDelegate{
     
