@@ -22,7 +22,7 @@ extension VideoAlamofireProcess{
         
         guard let keyword = searchKeyword else { return }
         
-        let apiKey = "https://www.googleapis.com/youtube/v3/search?&key=AIzaSyCGiCEWay6ZVYxAVC1lbwP-7WcZiM0ZQ6Q&part=snippet&q=\(keyword.urlEncoded)&maxResults=15"
+        let apiKey = "https://www.googleapis.com/youtube/v3/search?&key=作成したKey&part=snippet&q=\(keyword.urlEncoded)&maxResults=15"
         
         AF.request(apiKey, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON {[self] response in
             
