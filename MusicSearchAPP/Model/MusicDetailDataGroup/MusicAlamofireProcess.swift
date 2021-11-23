@@ -19,7 +19,7 @@ extension MusicAlamofireProcess{
      
         guard let keyword = searchKeyWord else { return }
         
-        let apiKey = ""
+        let apiKey = "https://app.rakuten.co.jp/services/api/BooksCD/Search/20170404?format=json&artistName=\(keyword.urlEncoded)&applicationId=作成したアプリID"
         
         AF.request(apiKey, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON {[self] response in
             
